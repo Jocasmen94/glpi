@@ -18,11 +18,11 @@ services:
     container_name : glpi
     hostname: glpi
     ports:
-      - "8200:80"
+      - "80:80"
     volumes:
       - ./glpi/:/var/www/html/glpi
     environment:
-      - TIMEZONE=Europe/Madrid
+      - TIMEZONE=America/El_Salvador  # Or America/San_Salvador
     restart: unless-stopped
     
     
